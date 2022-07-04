@@ -27,9 +27,15 @@ public class Login extends HttpServlet {
 		System.out.println(password);
 		
 		if (email.equals(USER_EMAIL) && password.equals(USER_PASS)) {
-			System.out.println("success!!!");
+			System.out.println("login success!!!");
+			//Redirect（リダイレクト）
+			String uri = request.getContextPath() + "/user/index.jsp";
+			response.sendRedirect(uri);
 		} else {
-			System.out.println("failed!!!");
+			System.out.println("login failed!!!");
+			//Redirect（リダイレクト）
+			String uri = request.getContextPath() + "/login.jsp";
+			response.sendRedirect(uri);
 		}
 	}
 
