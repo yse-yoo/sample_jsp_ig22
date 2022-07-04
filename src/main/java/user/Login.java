@@ -15,6 +15,12 @@ public class Login extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("POST!!!");
+		
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		
+		System.out.println(email);
+		System.out.println(password);
 	}
 
 }
