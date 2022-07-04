@@ -8,7 +8,7 @@
     </head>
 
     <body>
-        <form action="./auth.jsp" method="post">
+        <form action="./login/auth" method="post">
             <div>
                 <label>Email</label>
                 <input type="text" name="email">
